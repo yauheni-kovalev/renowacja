@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Profesjonalna renowacja okien drewnianych w Warszawie i okolicach. Odnów stare okna za 1/3 ceny nowej wymiany. Bezpłatna diagnoza!">
+    <title>Renowacja Okien Warszawa • Odnów drewniane okna i zaoszczędź do 70%</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@700&display=swap');
+        
+        :root {
+            --wood: #4a2c0b;
+        }
+        
+        * {
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms;
+        }
+        
+        .tail-container * {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-font {
+            font-family: 'Playfair Display', sans-serif;
+        }
+        
+        .hero-bg {
+            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), url('Gemini_Generated_Image_q3e4hjq3e4hjq3e4.png') center/cover no-repeat;
+        }
+        
+        .section-header {
+            position: relative;
+        }
+        
+        .section-header::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background: #22c55e;
+            border-radius: 9999px;
+        }
+        
+        .before-after {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .process-step {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .faq-question {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="tail-container">
+    <!-- NAV -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 md:py-4 flex items-center justify-between">
+            <div class="flex items-center gap-2 md:gap-3">
+                <div class="w-9 h-9 md:w-11 md:h-11 bg-[#4a2c0b] text-white rounded-xl flex items-center justify-center text-xl md:text-2xl shadow-inner">
+                    🪟
+                </div>
+                <div class="leading-tight">
+                    <h1 class="text-lg md:text-2xl font-bold text-[#4a2c0b] heading-font uppercase tracking-tight">
+                        Renowacja Okien
+                    </h1>
+                    <p class="text-[10px] md:text-xs text-gray-500 font-medium">Warszawa i okolice</p>
+                </div>
+            </div>
+
+            <div class="hidden lg:flex items-center gap-6 text-sm font-semibold text-gray-700">
+                <a href="#problem" class="hover:text-[#22c55e] transition-colors">Problem</a>
+                <a href="#dlaczego" class="hover:text-[#22c55e] transition-colors">Dlaczego?</a>
+                <a href="#proces" class="hover:text-[#22c55e] transition-colors">Proces</a>
+                <a href="#uslugi" class="hover:text-[#22c55e] transition-colors">Usługi</a>
+                <a href="#faq" class="hover:text-[#22c55e] transition-colors">FAQ</a>
+            </div>
+
+            <div class="flex items-center gap-2 md:gap-4">
+                <a href="tel:+48123456789" class="flex items-center gap-2 p-2 text-[#4a2c0b] hover:text-[#22c55e] transition-all">
+                    <span class="text-lg md:text-sm">📞</span>
+                    <span class="hidden sm:inline text-sm font-bold">+48 123 456 789</span>
+                </a>
+                <button onclick="document.getElementById('cta-form').scrollIntoView({ behavior: 'smooth' })" 
+                        class="bg-[#22c55e] hover:bg-[#16a34a] text-white px-4 py-2.5 md:px-6 md:py-3 rounded-xl font-bold text-xs md:text-sm shadow-lg shadow-[#22c55e]/20 transition-transform active:scale-95 flex items-center gap-2">
+                    <span class="hidden xs:inline">Bezpłatna</span> Diagnoza <span class="hidden xs:inline">📆✔️</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+   <section class="hero-bg min-h-[90vh] flex items-center text-white py-10 md:py-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center w-full">
+            
+            <div class="space-y-6 md:space-y-8 text-center lg:text-left z-10">
+                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs md:text-sm font-medium px-4 py-2 rounded-full mx-auto lg:mx-0">
+                    📍 Warszawa • Mokotów • Wilanów • Białołęka
+                </div>
+
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight heading-font">
+                    Twoje okna drewniane <br class="hidden sm:block">mają 15-25 lat? 
+                    <span class="text-[#22c55e] block mt-2">Odnów je, zanim będzie za późno! ⚠️</span>
+                </h1>
+
+                <p class="text-lg md:text-2xl text-white/90 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+                    Profesjonalna renowacja okien. 
+                    <span class="font-bold underline decoration-[#22c55e]">Zaoszczędź do 70% kosztów</span> w porównaniu z wymianą.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                    <button onclick="document.getElementById('cta-form').scrollIntoView({ behavior: 'smooth' })" 
+                            class="bg-[#22c55e] hover:bg-[#16a34a] text-white text-lg font-bold px-8 py-5 rounded-2xl flex items-center justify-center gap-3 shadow-2xl shadow-[#22c55e]/40 transition-all active:scale-95">
+                        Bezpłatna wycena ✅
+                    </button>
+                    
+                    <a href="#before-after" class="bg-white/10 hover:bg-white/20 border border-white/30 backdrop-blur-sm text-white text-lg font-semibold px-8 py-5 rounded-2xl flex items-center justify-center gap-2 transition-all">
+                        Efekty przed/po 🖼️
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-white/10 text-left">
+                    <div class="flex items-center lg:items-start gap-3">
+                        <span class="text-3xl shrink-0">🛡️</span>
+                        <div>
+                            <div class="font-bold text-sm">Gwarancja 5 lat</div>
+                            <div class="text-white/70 text-xs">na powłoki</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center lg:items-start gap-3">
+                        <span class="text-3xl shrink-0">🍃</span>
+                        <div>
+                            <div class="font-bold text-sm">Eco-friendly</div>
+                            <div class="text-white/70 text-xs">Odnawiamy drewno</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center lg:items-start gap-3">
+                        <span class="text-3xl shrink-0">⏱️</span>
+                        <div>
+                            <div class="font-bold text-sm">1-2 dni</div>
+                            <div class="text-white/70 text-xs">bez kucia ścian</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center lg:items-end gap-8">
+                <div class="bg-white/10 backdrop-blur-xl rounded-[40px] p-8 md:p-10 border border-white/20 shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500 w-full max-w-[320px] text-center">
+                    <div class="text-7xl md:text-8xl font-black text-[#22c55e] leading-none italic">70%</div>
+                    <div class="text-sm md:text-xl font-bold uppercase tracking-widest mt-2">taniej niż wymiana</div>
+                </div>
+                
+                <div class="text-white/80 text-lg md:text-xl max-w-[350px] italic text-center lg:text-right relative">
+                    <span class="absolute -top-4 -left-4 lg:left-auto lg:-right-4 text-white/20 text-4xl">❝</span>
+                    „Okna wyglądają jak nowe, a rachunki za ogrzewanie spadły o 28%”
+                    <span class="absolute -bottom-4 -right-4 lg:right-auto lg:-left-4 text-white/20 text-4xl">❞</span>
+                    <span class="text-sm mt-4 block not-italic font-bold text-[#22c55e]">
+                        — Anna Kowalska, Wilanów
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BEFORE / AFTER -->
+    <section id="before-after" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="px-4 py-2 bg-[#22c55e]/10 text-[#22c55e] text-sm font-semibold rounded-3xl">NAJLEPSZY DOWÓD</span>
+                <h2 class="text-4xl font-bold heading-font mt-4 text-[#4a2c0b]">Zobacz co potrafimy zrobić z Twoimi oknami</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+                
+                <div class="flex flex-col rounded-3xl overflow-hidden shadow-2xl bg-white transition-all hover:shadow-3xl">
+                    <div class="bg-[#4a2c0b] text-white text-center py-3 text-sm font-bold tracking-wider uppercase">
+                        PRZED renowacją
+                    </div>
+                    <div class="w-full bg-gray-200">
+                        <img src="okno1.jpg" alt="Okno przed renowacją" class="w-full h-auto block">
+                    </div>
+                    <div class="p-6 md:p-8 flex-1 flex items-center justify-center bg-white border-t border-gray-100">
+                        <p class="text-red-600 font-bold text-lg leading-relaxed flex items-start gap-3">
+                            <span class="text-2xl shrink-0">❌</span>
+                            <span>Pękająca farba • Łuszczący się lakier • Szary nalot • Wilgoć w drewnie</span>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col rounded-3xl overflow-hidden shadow-2xl bg-white transition-all hover:shadow-3xl">
+                    <div class="bg-[#22c55e] text-white text-center py-3 text-sm font-bold tracking-wider uppercase">
+                        PO renowacji
+                    </div>
+                    <div class="w-full bg-gray-200">
+                        <img src="okno2.jpg" alt="Okno po renowacji" class="w-full h-auto block">
+                    </div>
+                    <div class="p-6 md:p-8 flex-1 flex items-center justify-center bg-white border-t border-gray-100">
+                        <p class="text-[#22c55e] font-bold text-lg leading-relaxed flex items-start gap-3">
+                            <span class="text-2xl shrink-0">✅</span>
+                            <span>Wygląda jak fabrycznie nowe • Chronione na kolejne 15–20 lat</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <p class="text-center text-gray-400 mt-10 text-sm font-medium">
+                * Zdjęcia realizacji na Mokotowie
+            </p>
+        </div>
+    </section>
+
+    <!-- PROBLEM SECTION -->
+    <section id="problem" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-12 items-start">
+                
+                <div class="md:col-span-7">
+                    <h2 class="text-4xl font-bold heading-font leading-tight text-[#4a2c0b]">
+                        Widzisz pękającą farbę lub łuszczący się lakier?<br>
+                        <span class="text-red-600">To ostatni dzwonek.</span>
+                    </h2>
+                    
+                    <div class="mt-8 text-lg leading-relaxed text-gray-700">
+                        Drewno to szlachetny materiał, ale bez szczelnej powłoki staje się bezbronne. Jeśli zauważyłeś:
+                    </div>
+                    
+                    <ul class="mt-6 space-y-5">
+                        <li class="flex gap-4 items-start">
+                            <span class="text-2xl shrink-0">‼️</span>
+                            <span class="text-lg text-gray-700">Drobne pęknięcia вzdłuż słojów</span>
+                        </li>
+                        <li class="flex gap-4 items-start">
+                            <span class="text-2xl shrink-0">‼️</span>
+                            <span class="text-lg text-gray-700">Odchodzącą płatami farbę</span>
+                        </li>
+                        <li class="flex gap-4 items-start">
+                            <span class="text-2xl shrink-0">‼️</span>
+                            <span class="text-lg text-gray-700">Szary nalot na surowym drewnie</span>
+                        </li>
+                        <li class="flex gap-4 items-start">
+                            <span class="text-2xl shrink-0">‼️</span>
+                            <span class="text-lg text-gray-700">Wilgoć wnikającą в głąb ramy</span>
+                        </li>
+                    </ul>
+
+                    <div class="mt-8 relative group rounded-[2rem] overflow-hidden shadow-lg border border-red-100">
+                        <div class="absolute top-4 left-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full z-10 shadow-md">PRZED RENOWACJĄ</div>
+                        <img src="przed.png" alt="Zniszczone okno" class="w-full h-auto min-h-[300px] object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="bg-red-50 p-4 text-center border-t border-red-100">
+                            <p class="text-red-700 text-sm italic font-medium">Przykład zaawansowanej degradacji powłoki i drewna</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-12 space-y-6">
+                        <p class="text-xl font-bold text-[#4a2c0b]">
+                            Nie czekaj! 🛑
+                        </p>
+                        <p class="text-gray-700 leading-relaxed text-lg">
+                            Gdy drewno zacznie gnić, jedynym wyjściem będzie kosztowna wymiana całego okna, co wiąże się z kuciem ścian, kurzem i ogromnymi wydatkami.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed text-lg">
+                            Nasza renowacja przywraca oknu stan fabryczny, chroniąc je na kolejne kilkanaście lat.
+                        </p>
+                    </div>
+
+                    <div class="mt-8 relative group rounded-[2rem] overflow-hidden shadow-2xl border border-green-100">
+                        <div class="absolute top-4 left-4 bg-[#22c55e] text-white text-xs font-bold px-3 py-1 rounded-full z-10 shadow-md">PO NASZEJ RENOWACJI</div>
+                        <img src="po.png" alt="Okno po renowacji" class="w-full h-auto min-h-[300px] object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div class="bg-green-50 p-4 text-center border-t border-green-100">
+                            <p class="text-[#15803d] text-sm font-bold uppercase tracking-wider">Efekt końcowy: przywrócony stan fabryczny</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:col-span-5 md:sticky md:top-24">
+                    <div class="bg-[#4a2c0b] text-white rounded-[2.5rem] p-8 md:p-10 shadow-2xl transition-all duration-300 hover:shadow-[#4a2c0b]/20">
+                        <h3 class="text-2xl font-bold mb-8 leading-tight">
+                            Co się stanie, jeśli zignorujesz problem? 📉
+                        </h3>
+                        <div class="space-y-8">
+                            <div class="flex gap-5 items-center group">
+                                <div class="text-4xl font-black text-[#22c55e]/30 italic transition-colors group-hover:text-[#22c55e]/60">1</div>
+                                <div class="font-medium text-lg leading-snug">Rot drewna → wymiana całego okna</div>
+                            </div>
+                            <div class="flex gap-5 items-center group">
+                                <div class="text-4xl font-black text-[#22c55e]/30 italic transition-colors group-hover:text-[#22c55e]/60">2</div>
+                                <div class="font-medium text-lg leading-snug">Strata ciepła → wyższe rachunki</div>
+                            </div>
+                            <div class="flex gap-5 items-center group">
+                                <div class="text-4xl font-black text-[#22c55e]/30 italic transition-colors group-hover:text-[#22c55e]/60">3</div>
+                                <div class="font-medium text-lg leading-snug">Wilgoć i pleśń wewnątrz domu</div>
+                            </div>
+                            <div class="flex gap-5 items-center group">
+                                <div class="text-4xl font-black text-[#22c55e]/30 italic transition-colors group-hover:text-[#22c55e]/60">4</div>
+                                <div class="font-medium text-lg leading-snug">Spadek wartości nieruchomości</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DLACZEGO RENOWACJA -->
+    <section id="porownanie" class="py-20 bg-stone-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold heading-font text-[#4a2c0b] mb-4">
+                    Dlaczego <span class="text-green-600">renowacja</span>, a nie <span class="text-red-600">wymiana</span>?
+                </h2>
+                <p class="text-lg text-gray-600 font-medium">Inteligentny wybór, który chroni Twój portfel i charakter domu.</p>
+            </div>
+
+            <div class="hidden md:grid grid-cols-12 gap-4 pb-4 px-6 border-b-2 border-stone-200">
+                <div class="col-span-4 text-sm font-bold uppercase tracking-wider text-stone-400">Cecha</div>
+                <div class="col-span-4 text-sm font-bold uppercase tracking-wider text-green-600 text-center">Profesjonalna Renowacja</div>
+                <div class="col-span-4 text-sm font-bold uppercase tracking-wider text-red-600 text-center">Wymiana na nowe</div>
+            </div>
+
+            <div class="mt-4 space-y-4">
+                
+                <div class="bg-white rounded-2xl md:rounded-none shadow-sm md:shadow-none border border-stone-100 md:border-0 p-4 md:p-0 transition-hover hover:bg-white/80">
+                    <div class="grid grid-cols-1 md:grid-cols-12 md:items-center gap-4 md:gap-0 md:py-6 md:px-6 md:border-b md:border-stone-100">
+                        <div class="md:col-span-4 font-bold text-[#4a2c0b] md:text-lg">Koszt</div>
+                        <div class="grid grid-cols-2 md:col-span-8 gap-4 text-center">
+                            <div class="bg-green-50 md:bg-transparent p-3 md:p-0 rounded-xl text-green-700 font-semibold">
+                                ✅ Zaoszczędzasz do 70%
+                            </div>
+                            <div class="bg-red-50 md:bg-transparent p-3 md:p-0 rounded-xl text-red-600 italic font-medium">
+                                ❌ Ogromny wydatek
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl md:rounded-none shadow-sm md:shadow-none border border-stone-100 md:border-0 p-4 md:p-0 transition-hover">
+                    <div class="grid grid-cols-1 md:grid-cols-12 md:items-center gap-4 md:gap-0 md:py-6 md:px-6 md:border-b md:border-stone-100">
+                        <div class="md:col-span-4 font-bold text-[#4a2c0b] md:text-lg">Inwazyjność</div>
+                        <div class="grid grid-cols-2 md:col-span-8 gap-4 text-center">
+                            <div class="bg-green-50 md:bg-transparent p-3 md:p-0 rounded-xl text-green-700 font-semibold">
+                                ✅ Bez kurzu i kucia
+                            </div>
+                            <div class="bg-red-50 md:bg-transparent p-3 md:p-0 rounded-xl text-red-600 italic font-medium">
+                                ❌ Generalny remont
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl md:rounded-none shadow-sm md:shadow-none border border-stone-100 md:border-0 p-4 md:p-0 transition-hover">
+                    <div class="grid grid-cols-1 md:grid-cols-12 md:items-center gap-4 md:gap-0 md:py-6 md:px-6 md:border-b md:border-stone-100">
+                        <div class="md:col-span-4 font-bold text-[#4a2c0b] md:text-lg">Czas realizacji</div>
+                        <div class="grid grid-cols-2 md:col-span-8 gap-4 text-center">
+                            <div class="bg-green-50 md:bg-transparent p-3 md:p-0 rounded-xl text-green-700 font-semibold">
+                                ✅ Szybko (1-2 dni)
+                            </div>
+                            <div class="bg-red-50 md:bg-transparent p-3 md:p-0 rounded-xl text-red-600 italic font-medium">
+                                ❌ Długie tygodnie
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl md:rounded-none shadow-sm md:shadow-none border border-stone-100 md:border-0 p-4 md:p-0 transition-hover">
+                    <div class="grid grid-cols-1 md:grid-cols-12 md:items-center gap-4 md:gap-0 md:py-6 md:px-6 md:border-b md:border-stone-100">
+                        <div class="md:col-span-4 font-bold text-[#4a2c0b] md:text-lg">Wartość i Autentyczność</div>
+                        <div class="grid grid-cols-2 md:col-span-8 gap-4 text-center">
+                            <div class="bg-green-50 md:bg-transparent p-3 md:p-0 rounded-xl text-green-700 font-semibold leading-tight">
+                                ✅ Zachowujesz oryginalny wygląd i podnosisz wartość domu
+                            </div>
+                            <div class="bg-red-50 md:bg-transparent p-3 md:p-0 rounded-xl text-red-600 italic font-medium leading-tight">
+                                ❌ Zmiana elewacji i utrata charakteru stolarki
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-16 bg-[#4a2c0b] text-white rounded-[2.5rem] p-8 md:p-12 shadow-2xl relative overflow-hidden">
+                <div class="relative z-10">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-8 heading-font flex items-center gap-3">
+                        Podsumowanie: Dlaczego renowacja wygrywa? 🏠✨
+                    </h3>
+                    
+                    <div class="grid md:grid-cols-2 gap-x-8 gap-y-6 text-stone-200">
+                        <div class="space-y-6">
+                            <p class="leading-relaxed text-lg">
+                                Renowacja to najkorzystniejszy wybór z każdej perspektywy. <span class="text-white font-bold">Oszczędzasz czas i ogromne środki</span>, unikając uciążliwego remontu, pyłu i kucia ścian.
+                            </p>
+                            <p class="leading-relaxed text-lg">
+                                W przeciwieństwie do wymiany, nasza innowacyjna metoda pozwala zachować <span class="text-white font-bold">szlachetne, sezonowane drewno</span>, które służyło Ci przez lata.
+                            </p>
+                        </div>
+                        <div class="space-y-6">
+                            <p class="leading-relaxed text-lg">
+                                Co najważniejsze — zachowujesz <span class="text-white font-bold">autentyczny, luksusowy wygląd</span> swojej nieruchomości. Oryginalna stolarka to prestiż, który bezpośrednio wpływa na выższą cenę rynkową Twojego domu lub mieszkania.
+                            </p>
+                            <p class="text-[#22c55e] font-bold text-xl flex items-center gap-2 pt-2">
+                                ✅ Wybierasz jakość, która chroni historię Twojego domu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROCES -->
+    <section id="proces" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold heading-font text-[#4a2c0b]">Jak przywracamy blask Twoim oknom?</h2>
+                <p class="text-xl mt-4 text-gray-600">Poznaj nasz proces krok po kroku</p>
+                <div class="mt-4 inline-flex items-center gap-2 bg-amber-100 text-amber-800 px-5 py-2 rounded-3xl text-sm font-medium">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    Stosujemy wyłącznie systemy Remmers, Teknos, Sigma – dopasowane do polskiego klimatu
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white border border-gray-100 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 bg-[#4a2c0b] text-white rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:rotate-6 transition-transform">1</div>
+                    <h4 class="font-bold text-xl text-[#4a2c0b] flex items-center gap-2">
+                        🔍 Diagnostyka
+                    </h4>
+                    <p class="mt-3 text-gray-600 leading-relaxed text-sm">Dokładna ocena stanu drewna i okuć + zabezpieczenie otoczenia</p>
+                </div>
+
+                <div class="bg-white border border-gray-100 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 bg-[#4a2c0b] text-white rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:rotate-6 transition-transform">2</div>
+                    <h4 class="font-bold text-xl text-[#4a2c0b] flex items-center gap-2">
+                        👷 Demontaż
+                    </h4>
+                    <p class="mt-3 text-gray-600 leading-relaxed text-sm">Zdejmujemy skrzydła i docieramy do każdego zakamarka</p>
+                </div>
+
+                <div class="bg-white border border-gray-100 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 bg-[#4a2c0b] text-white rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:rotate-6 transition-transform">3</div>
+                    <h4 class="font-bold text-xl text-[#4a2c0b] flex items-center gap-2">
+                        🪟 Oczyszczanie
+                    </h4>
+                    <p class="mt-3 text-gray-600 leading-relaxed text-sm">Mechanicznie i chemicznie usuwamy stare powłoki do surowego drewna</p>
+                </div>
+
+                <div class="bg-white border border-gray-100 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 bg-[#4a2c0b] text-white rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:rotate-6 transition-transform">4</div>
+                    <h4 class="font-bold text-xl text-[#4a2c0b] flex items-center gap-2">
+                        ⚒️ Szlifowanie
+                    </h4>
+                    <p class="mt-3 text-gray-600 leading-relaxed text-sm">Precyzyjne wygładzanie + wypełnianie ubytków masami specjalistycznymi</p>
+                </div>
+
+                <div class="bg-white border border-gray-100 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 bg-[#4a2c0b] text-white rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:rotate-6 transition-transform">5</div>
+                    <h4 class="font-bold text-xl text-[#4a2c0b] flex items-center gap-2">
+                        🖌️ Malowanie
+                    </h4>
+                    <p class="mt-3 text-gray-600 leading-relaxed text-sm">Odtłuszczanie + impregnat + minimum 2 warstwy farby / lakierobejcy</p>
+                </div>
+
+                <div class="bg-white border border-gray-100 rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all group">
+                    <div class="w-12 h-12 bg-[#4a2c0b] text-white rounded-2xl flex items-center justify-center text-2xl font-bold mb-6 group-hover:rotate-6 transition-transform">6</div>
+                    <h4 class="font-bold text-xl text-[#4a2c0b] flex items-center gap-2">
+                        🔧 Regulacja
+                    </h4>
+                    <p class="mt-3 text-gray-600 leading-relaxed text-sm">Czyszczenie, smarowanie i precyzyjna regulacja docisku okuć</p>
+                </div>
+
+                <div class="bg-white border-2 border-dashed border-[#22c55e] rounded-3xl p-8 shadow-sm hover:shadow-xl transition-all group col-span-2 md:col-span-1 lg:col-span-2 flex items-center justify-center">
+                    <div class="text-center">
+                        <i class="fa-solid fa-video text-5xl text-[#22c55e] mb-4"></i>
+                        <p class="font-bold text-xl text-[#4a2c0b]">Chcesz zobaczyć proces na żywo?</p>
+                        <button onclick="window.open('https://www.youtube.com/watch?v=dQw4w9wgxcQ','_blank')" class="mt-4 text-[#22c55e] font-bold flex items-center gap-2 mx-auto hover:scale-105 transition-transform">
+                            <i class="fa-solid fa-play"></i> Obejrzyj 48-sekundowe wideo
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-24 pt-12 border-t border-gray-100">
+                <p class="text-center text-xs font-bold uppercase tracking-widest text-stone-400 mb-10">Pracujemy na profesjonalnych systemach:</p>
+                <div class="flex flex-wrap justify-center items-center gap-12 md:gap-24">
+                    <img src="Tikkurila.png" 
+                         alt="Tikkurila" 
+                         class="h-8 md:h-10 w-auto opacity-80 hover:opacity-100 transition-opacity">
+                    <img src="Sikkiens.png" 
+                         alt="Sikkens" 
+                         class="h-10 md:h-12 w-auto opacity-80 hover:opacity-100 transition-opacity">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DODATKOWE USŁUGI -->
+    <section id="komfort" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-[#4a2c0b] rounded-[2.5rem] p-8 md:p-16 shadow-2xl overflow-hidden relative border border-stone-200">
+                
+                <div class="absolute top-0 right-0 p-12 opacity-5 text-9xl">
+                    <i class="fa-solid fa-couch"></i>
+                </div>
+
+                <div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+                    
+                    <div class="space-y-8">
+                        <h2 class="text-4xl font-bold heading-font text-white leading-tight">
+                            Popraw komfort cieplny swojego domu 🛋️
+                        </h2>
+                        
+                        <div class="space-y-6">
+                            <p>
+                                <span class="bg-amber-500/20 text-amber-400 px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider border border-amber-500/30">
+                                    Usługa dodatkowa
+                                </span>
+                            </p>
+                            <p class="text-white text-xl font-medium leading-relaxed">
+                                Choć renowacja ramy to podstawa, to właśnie wymiana uszczelek jest kluczowa dla Twojego komfortu.
+                            </p>
+                            <p class="text-stone-300 leading-relaxed">
+                                Jest to usługa dodatkowa, którą **zdecydowanie rekomendujemy**. Stare, twarde uszczelki nie chronią już przed wiatrem i hałasem. Nasza modernizacja przywraca oknu pełną szczelność.
+                            </p>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-8 pt-4">
+                            <div class="flex items-start gap-4">
+                                <div class="text-3xl bg-white/10 p-3 rounded-2xl">🔇</div>
+                                <div>
+                                    <h4 class="font-bold text-white text-lg">Cisza w domu</h4>
+                                    <p class="text-sm text-stone-300">Maksymalna izolacja od hałasów ulicznych.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="text-3xl bg-white/10 p-3 rounded-2xl">🔥</div>
+                                <div>
+                                    <h4 class="font-bold text-white text-lg">Ciepło zostaje</h4>
+                                    <p class="text-sm text-stone-300">Zredukujesz straty energii i rachunki za ogrzewanie.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pt-6 border-t border-white/10">
+                            <p class="text-amber-400 font-bold flex items-center gap-2">
+                                <i class="fa-solid fa-certificate"></i>
+                                Stosujemy wyłącznie oryginalne systemy Schlegel Q-Lon
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="relative group">
+                        <div class="bg-white/5 p-4 rounded-[2rem] backdrop-blur-sm border border-white/10">
+                            <img src="Gemini_Generated_Image_ibjt2aibjt2aibjt.png" alt="Uszczelka Schlegel Q-Lon" class="rounded-2xl shadow-2xl w-full h-auto object-cover transition-transform duration-700 group-hover:scale-[1.02]">
+                            
+                            <div class="mt-4 text-center">
+                                <p class="text-stone-400 text-xs uppercase tracking-[0.2em] font-medium">Gwarancja najwyższej szczelności</p>
+                            </div>
+                        </div>
+                        
+                        <div class="absolute -top-4 -right-4 bg-[#22c55e] text-white px-6 py-3 rounded-2xl font-bold shadow-xl rotate-3">
+                            REKOMENDACJA ✅
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kolorystyka-wnetrza" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            
+            <div class="text-center max-w-3xl mx-auto mb-20">
+                <h2 class="text-4xl md:text-5xl font-bold heading-font text-[#4a2c0b] mb-6">
+                    Nowe oblicze Twojego wnętrza 🎨
+                </h2>
+                <div class="h-1.5 w-24 bg-[#22c55e] mx-auto rounded-full mb-8"></div>
+                <p class="text-xl text-gray-600 leading-relaxed font-medium">
+                    Zmieniamy nie tylko trwałość, ale и styl. Dopasuj kolor okien do swojego nowego projektu wnętrza bez konieczności ich wymiany.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                
+                <div class="space-y-8">
+                    <div class="bg-stone-50 p-8 md:p-10 rounded-[2.5rem] border border-stone-100 shadow-sm">
+                        <h3 class="text-2xl font-bold text-[#4a2c0b] mb-6 flex items-center gap-3">
+                            <span>🪄</span> Estetyka bez kompromisów
+                        </h3>
+                        
+                        <div class="space-y-6 text-gray-700 text-lg leading-relaxed">
+                            <p>
+                                Twoje okna mogą stać się integralną częścią wystroju. Dzięki usłudze zmiany koloru wewnętrznych ram i skrzydeł na dowolny odcień z **palety RAL**, nadasz pomieszczeniom zupełnie nowe postrzeganie.
+                            </p>
+                            <p>
+                                To idealne rozwiązanie, jeśli planujesz remont, a stare, „miodowe” lub ciemnobrązowe ramy przestały pasować do nowoczesnego stylu. Odświeżamy wygląd Twojego domu, zachowując jego unikalne cechy konstrukcyjne.
+                            </p>
+                        </div>
+
+                        <div class="mt-8 pt-8 border-t border-stone-200">
+                            <div class="flex items-center gap-4 text-[#4a2c0b] font-bold">
+                                <div class="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm">💎</div>
+                                <p>Efekt Premium, który odmieni Twój salon lub sypialnię.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="group">
+                        <div class="relative rounded-[2rem] overflow-hidden shadow-lg border border-stone-100 aspect-[3/4]">
+                            <img src="Image 45 2026 г., 23_24_27.png" alt="Stary kolor okien" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute top-4 left-4 bg-red-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase shadow-lg">
+                                Przestarzały kolor
+                            </div>
+                        </div>
+                        <p class="mt-4 text-center font-bold text-gray-400">❌ Przed zmianą</p>
+                    </div>
+
+                    <div class="group sm:mt-12">
+                        <div class="relative rounded-[2rem] overflow-hidden shadow-2xl border-2 border-[#22c55e] aspect-[3/4]">
+                            <img src="Image 4  2026 г., 23_24_27.png" alt="Nowy kolor RAL" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                            <div class="absolute top-4 left-4 bg-[#22c55e] text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase shadow-lg">
+                                Nowoczesny RAL
+                            </div>
+                        </div>
+                        <p class="mt-4 text-center font-bold text-[#22c55e]">✅ Efekt końcowy</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-24 grid md:grid-cols-3 gap-8">
+                <div class="bg-[#4a2c0b] p-8 rounded-[2rem] shadow-xl text-white transform transition-hover hover:-translate-y-2">
+                    <div class="text-4xl mb-6">🏠</div>
+                    <h5 class="text-xl font-bold mb-4">Idealne dopasowanie</h5>
+                    <p class="text-stone-300 text-sm leading-relaxed">
+                        Okna stają się spójne z Twoim nowym projektem wnętrza, kolorem ścian i mebli.
+                    </p>
+                </div>
+
+                <div class="bg-[#4a2c0b] p-8 rounded-[2rem] shadow-xl text-white transform transition-hover hover:-translate-y-2">
+                    <div class="text-4xl mb-6">📈</div>
+                    <h5 class="text-xl font-bold mb-4">Wzrost wartości</h5>
+                    <p class="text-stone-300 text-sm leading-relaxed">
+                        Nowoczesna kolorystyka (np. antracyt) bezpośrednio podnosi cenę rynkową Twojego domu.
+                    </p>
+                </div>
+
+                <div class="bg-[#4a2c0b] p-8 rounded-[2rem] shadow-xl text-white transform transition-hover hover:-translate-y-2">
+                    <div class="text-4xl mb-6">🛋️</div>
+                    <h5 class="text-xl font-bold mb-4">Wygląd Premium</h5>
+                    <p class="text-stone-300 text-sm leading-relaxed">
+                        Twoje mieszkanie zyskuje luksusowy charakter bez kosztownego i brudnego kucia murów.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <p class="text-[#4a2c0b] font-bold text-xl flex items-center justify-center gap-3">
+                    ✨ Odśwież swoje wnętrze jednym inteligentnym wyborem.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- O NAS / LOKALIZACJA -->
+    <section id="lokalizacja" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-16">
+                <div class="md:col-span-5">
+                    <h2 class="text-4xl font-bold heading-font">Specjaliści od drewna w Twojej okolicy</h2>
+                    <p class="mt-6 text-lg">Działamy na terenie całej Warszawy i okolic. Przyjeżdżamy do Ciebie – nie musisz nigdzie jechać.</p>
+                    
+                    <div class="mt-12 grid grid-cols-2 gap-6 text-sm">
+                        <div class="font-medium">Warszawa:</div>
+                        <div>Mokotów • Wilanów • Białołęka • Wawer • Ursynów • Śródmieście • Praga</div>
+                        
+                        <div class="font-medium">Okolice:</div>
+                        <div>Piaseczno • Pruszków • Marki • Legionowo • Sulejówek • Konstancin-Jeziorna • Otwock</div>
+                    </div>
+                    
+                    <div class="mt-16 flex items-center gap-4">
+                        <div class="flex-1 h-px bg-gray-300"></div>
+                        <i class="fa-solid fa-truck-pickup text-4xl text-[#22c55e]"></i>
+                        <div class="flex-1 h-px bg-gray-300"></div>
+                    </div>
+                    <p class="text-center text-sm uppercase tracking-widest text-gray-500">Dojeżdżamy w 24h po zgłoszeniu</p>
+                </div>
+                
+                <div class="md:col-span-7 bg-gray-100 rounded-3xl p-8 flex items-center justify-center min-h-[420px]">
+                    <!-- Placeholder mapy -->
+                    <div class="text-center">
+                        <div class="text-8xl mb-6">📍</div>
+                        <p class="text-2xl font-semibold">Warszawa + 30 km</p>
+                        <p class="text-gray-500">Dokładny dojazd pod Twój adres</p>
+                        <div class="mt-12 text-xs flex justify-center gap-8">
+                            <div>⭐ 4.98/5 (142 opinie)</div>
+                            <div>✅ 312 okien odnowionych w 2025 roku</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-4xl font-bold heading-font text-center mb-12">Często zadawane pytania</h2>
+            
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div onclick="this.nextElementSibling.classList.toggle('hidden')" class="faq-question bg-white rounded-3xl px-8 py-6 cursor-pointer shadow-sm">
+                    <div class="flex justify-between items-center">
+                        <span class="font-semibold text-lg">Czy renowacja jest możliwa zimą?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="hidden mt-6 text-gray-600">
+                        Tak! Prace wykonujemy przy użyciu kurtyn termicznych lub zabieramy skrzydła do naszego warsztatu. Jakość powłoki pozostaje taka sama.
+                    </div>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div onclick="this.nextElementSibling.classList.toggle('hidden')" class="faq-question bg-white rounded-3xl px-8 py-6 cursor-pointer shadow-sm">
+                    <div class="flex justify-between items-center">
+                        <span class="font-semibold text-lg">Jak długo trwa renowacja jednego okna?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="hidden mt-6 text-gray-600">
+                        Zazwyczaj od 4 do 8 godzin pracy netto, rozłożonych na etapy schnięcia. Całe okno gotowe w 1–2 dni kalendarzowe.
+                    </div>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div onclick="this.nextElementSibling.classList.toggle('hidden')" class="faq-question bg-white rounded-3xl px-8 py-6 cursor-pointer shadow-sm">
+                    <div class="flex justify-between items-center">
+                        <span class="font-semibold text-lg">Czy dajecie Państwo gwarancję?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="hidden mt-6 text-gray-600">
+                        Tak – na wykonane powłoki malarskie udzielamy pisemnej gwarancji 5 lat. Na uszczelki i regulację – 2 lata.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA + FORMULARZ -->
+    <section id="cta-form" class="bg-[#4a2c0b] py-24 text-white">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-5xl font-bold heading-font mb-4">Nie pozwól swoim oknom niszczeć</h2>
+            <p class="text-2xl text-white/80 max-w-md mx-auto">Umów się na bezpłatną wizytę technika. Sprawdzimy stan Twoich okien i przygotujemy niezobowiązującą ofertę.</p>
+            
+            <form id="contact-form" class="mt-12 max-w-xl mx-auto bg-white/10 backdrop-blur-3xl rounded-3xl p-10 shadow-2xl">
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="col-span-2 md:col-span-1">
+                        <label class="block text-sm mb-2">Imię i nazwisko</label>
+                        <input type="text" required 
+                               class="w-full bg-white/20 border border-white/30 focus:border-white rounded-2xl px-6 py-5 text-white placeholder:text-white/50 outline-none">
+                    </div>
+                    <div class="col-span-2 md:col-span-1">
+                        <label class="block text-sm mb-2">Telefon</label>
+                        <input type="tel" required 
+                               class="w-full bg-white/20 border border-white/30 focus:border-white rounded-2xl px-6 py-5 text-white placeholder:text-white/50 outline-none">
+                    </div>
+                    <div class="col-span-2">
+                        <label class="block text-sm mb-2">Lokalizacja (miasto / dzielnica)</label>
+                        <input type="text" placeholder="np. Wilanów, Warszawa" required
+                               class="w-full bg-white/20 border border-white/30 focus:border-white rounded-2xl px-6 py-5 text-white placeholder:text-white/50 outline-none">
+                    </div>
+                    <div class="col-span-2">
+                        <label class="block text-sm mb-2">Ile okien chcesz odnowić?</label>
+                        <select required class="w-full bg-white/20 border border-white/30 focus:border-white rounded-2xl px-6 py-5 text-white outline-none">
+                            <option value="">Wybierz...</option>
+                            <option>1–3 okna</option>
+                            <option>4–8 okien</option>
+                            <option>9–15 okien</option>
+                            <option>Powyżej 15 okien</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button type="submit"
+                        class="mt-8 w-full bg-[#22c55e] hover:bg-[#16a34a] text-white font-semibold text-2xl py-7 rounded-3xl flex items-center justify-center gap-4">
+                    <span>Zamów bezpłatną diagnozę</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                
+                <p class="text-xs text-white/60 mt-6">✅ Technik przyjedzie w ciągu 48h • Bezpłatnie • Bez żadnych zobowiązań</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#2c1a07] text-white/70 py-12">
+        <div class="max-w-7xl mx-auto px-6 text-sm flex flex-col md:flex-row justify-between items-center gap-8">
+            <div>© 2026 Renowacja Okien Warszawa • Wszelkie prawa zastrzeżone</div>
+            <div class="flex gap-8">
+                <a href="#" class="hover:text-white">Polityka prywatności</a>
+                <a href="#" class="hover:text-white">Regulamin</a>
+            </div>
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+48123456789" class="hover:text-white">+48 123 456 789</a>
+            </div>
+            <div class="text-xs">Wykonano z 💚 dla starych drewnianych okien</div>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script
+        function initializeTailwind() {
+            tailwind.config = {
+                content: [],
+                theme: {
+                    extend: {}
+                }
+            }
+        }
+        
+        // FAQ accordion (already handled by inline onclick)
+        
+        // Form submit simulation
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault()
+            const btn = this.querySelector('button')
+            const originalText = btn.innerHTML
+            
+            btn.innerHTML = `
+                <svg class="animate-spin h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"></path>
+                </svg>
+            `
+            setTimeout(() => {
+                alert('✅ Dziękujemy! Nasz technik skontaktuje się z Tobą w ciągu 30 minut.')
+                btn.innerHTML = originalText
+                this.reset()
+            }, 1800)
+        })
+        
+        // Smooth scroll for all anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') !== '#') {
+                    e.preventDefault()
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    })
+                }
+            })
+        })
+        
+        // Initialize
+        window.onload = initializeTailwind
+    </script>
+</body>
+</html>
