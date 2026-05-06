@@ -65,18 +65,31 @@
     <!-- NAV -->
     <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 md:py-4 flex items-center justify-between">
-            <div class="flex items-center gap-2 md:gap-3">
-                <div class="w-9 h-9 md:w-11 md:h-11 bg-[#4a2c0b] text-white rounded-xl flex items-center justify-center text-xl md:text-2xl shadow-inner">
-                    🪟
+            
+            <!-- ЛЕВЫЙ БЛОК: Логотип и Названия -->
+            <div class="flex items-center gap-2 md:gap-4 shrink-0">
+                
+                <!-- Логотип: Окно + Зеленые стрелочки с тенью -->
+                <div class="w-9 h-9 md:w-11 md:h-11 bg-[#4a2c0b] text-white rounded-xl flex items-center justify-center text-xl md:text-2xl shadow-inner relative shrink-0">
+                    <span>🪟</span>
+                    <!-- Тень (drop-shadow) создает эффект объема, отрывая значок от фона окна -->
+                    <span class="absolute -bottom-1 -right-1 md:-bottom-1.5 md:-right-1.5 text-sm md:text-lg drop-shadow-[0_3px_4px_rgba(0,0,0,0.6)] z-10">♻️</span>
                 </div>
-                <div class="leading-tight">
-                    <h1 class="text-lg md:text-2xl font-bold text-[#4a2c0b] heading-font uppercase tracking-tight">
-                        Renowacja Okien
+                
+                <!-- Названия -->
+                <div class="flex flex-col justify-center">
+                    <!-- Главное название строго в одну строчку (whitespace-nowrap не дает словам переноситься) -->
+                    <h1 class="text-sm sm:text-base md:text-xl font-bold text-[#4a2c0b] heading-font uppercase tracking-tight leading-none whitespace-nowrap">
+                        Nowe Okna
                     </h1>
-                    <p class="text-[10px] md:text-xs text-gray-500 font-medium">Warszawa i okolice</p>
+                    <!-- Подзаголовок: очень мелкий шрифт (8px на смартфонах), чтобы влезть на узкие экраны вроде iPhone SE -->
+                    <p class="text-[8px] sm:text-[9px] md:text-xs text-gray-500 font-bold uppercase tracking-wider mt-0.5 md:mt-1 leading-tight max-w-[140px] sm:max-w-none">
+                        Renowacja okien drewnianych
+                    </p>
                 </div>
             </div>
 
+            <!-- ЦЕНТР: Меню (скрыто на мобильных) -->
             <div class="hidden lg:flex items-center gap-6 text-sm font-semibold text-gray-700">
                 <a href="#problem" class="hover:text-[#22c55e] transition-colors">Problem</a>
                 <a href="#dlaczego" class="hover:text-[#22c55e] transition-colors">Dlaczego?</a>
@@ -85,7 +98,8 @@
                 <a href="#faq" class="hover:text-[#22c55e] transition-colors">FAQ</a>
             </div>
 
-            <div class="flex items-center gap-2 md:gap-4">
+            <!-- ПРАВЫЙ БЛОК: Контакты и Кнопка -->
+            <div class="flex items-center gap-2 md:gap-4 shrink-0">
                 <a href="tel:+48123456789" class="flex items-center gap-2 p-2 text-[#4a2c0b] hover:text-[#22c55e] transition-all">
                     <span class="text-lg md:text-sm">📞</span>
                     <span class="hidden sm:inline text-sm font-bold">+48 123 456 789</span>
@@ -95,76 +109,94 @@
                     <span class="hidden xs:inline">Bezpłatna</span> Diagnoza <span class="hidden xs:inline">📆✔️</span>
                 </button>
             </div>
+            
         </div>
     </nav>
 
     <!-- HERO -->
-   <section class="hero-bg min-h-[90vh] flex items-center text-white py-10 md:py-20 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center w-full">
+    <section class="hero-bg min-h-[auto] sm:min-h-[90vh] flex items-center text-white py-6 sm:py-10 md:py-20 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-2 gap-6 sm:gap-12 items-center w-full">
             
-            <div class="space-y-6 md:space-y-8 text-center lg:text-left z-10">
-                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs md:text-sm font-medium px-4 py-2 rounded-full mx-auto lg:mx-0">
-                    📍 Warszawa • Mokotów • Wilanów • Białołęka
+            <!-- ЛЕВАЯ ЧАСТЬ (Тексты и кнопки) -->
+            <div class="space-y-4 sm:space-y-8 text-center lg:text-left z-10">
+                
+                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 text-white text-[11px] sm:text-sm font-medium px-4 py-1.5 sm:py-2 rounded-full mx-auto lg:mx-0">
+                    📍 Warszawa i okolice
                 </div>
 
-                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight heading-font">
-                    Twoje okna drewniane <br class="hidden sm:block">mają 15-25 lat? 
-                    <span class="text-[#22c55e] block mt-2">Odnów je, zanim będzie za późno! ⚠️</span>
+                <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight heading-font">
+                    Twoje okna drewniane <br class="hidden sm:block">mają 15-20 lat? 
+                    <span class="text-[#22c55e] block mt-1 sm:mt-2">
+                        Odnów je, zanim będzie za późno! ⚠️
+                    </span>
                 </h1>
 
-                <p class="text-lg md:text-2xl text-white/90 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                    Profesjonalna renowacja okien. 
-                    <span class="font-bold underline decoration-[#22c55e]">Zaoszczędź do 70% kosztów</span> w porównaniu z wymianą.
-                </p>
+                <!-- ТЕКСТ ПРО ПЕРЕКРАСКУ (С картиной вместо палитры) -->
+                <div class="text-xs sm:text-lg md:text-xl text-white/90 max-w-xl mx-auto lg:mx-0 leading-relaxed mt-2 sm:mt-0">
+                    <p>
+                        Profesjonalna renowacja drewnianych okien. 
+                        <span class="font-bold underline decoration-[#22c55e]">Zaoszczędź do 70% kosztów</span> w porównaniu z wymianą.
+                    </p>
+                    <p class="mt-2 sm:mt-3 text-[10px] sm:text-base text-white/80 inline-block bg-white/5 px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg border border-white/10">
+                        🖼️ <span class="font-semibold text-white">Odśwież wnętrze:</span> przelakierujemy Twoje drewniane okna od wewnątrz na dowolny nowy kolor.
+                    </p>
+                </div>
 
-                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <!-- КНОПКИ (Строго 2 в ряд на мобилках) -->
+                <div class="flex flex-row justify-center lg:justify-start gap-2 sm:gap-4 w-full pt-1 sm:pt-0">
                     <button onclick="document.getElementById('cta-form').scrollIntoView({ behavior: 'smooth' })" 
-                            class="bg-[#22c55e] hover:bg-[#16a34a] text-white text-lg font-bold px-8 py-5 rounded-2xl flex items-center justify-center gap-3 shadow-2xl shadow-[#22c55e]/40 transition-all active:scale-95">
+                            class="flex-1 sm:flex-none bg-[#22c55e] hover:bg-[#16a34a] text-white text-[11px] sm:text-lg font-bold px-2 py-3 sm:px-8 sm:py-5 rounded-xl sm:rounded-2xl flex items-center justify-center gap-1 sm:gap-3 shadow-lg shadow-[#22c55e]/40 transition-all active:scale-95 leading-tight text-center">
                         Bezpłatna wycena ✅
                     </button>
                     
-                    <a href="#before-after" class="bg-white/10 hover:bg-white/20 border border-white/30 backdrop-blur-sm text-white text-lg font-semibold px-8 py-5 rounded-2xl flex items-center justify-center gap-2 transition-all">
-                        Efekty przed/po 🖼️
+                    <a href="#kolorystyka-wnetrza" class="flex-1 sm:flex-none bg-white/10 hover:bg-white/20 border border-white/30 backdrop-blur-sm text-white text-[11px] sm:text-lg font-semibold px-2 py-3 sm:px-8 sm:py-5 rounded-xl sm:rounded-2xl flex items-center justify-center gap-1 sm:gap-2 transition-all leading-tight text-center">
+                        Zmień kolor okien 🖼️
                     </a>
                 </div>
 
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 border-t border-white/10 text-left">
-                    <div class="flex items-center lg:items-start gap-3">
-                        <span class="text-3xl shrink-0">🛡️</span>
+                <!-- ПРЕИМУЩЕСТВА (Строго в 1 ряд на мобильном) -->
+                <div class="flex flex-row justify-between gap-1 sm:gap-6 pt-4 sm:pt-8 border-t border-white/10 text-center lg:text-left">
+                    <div class="flex flex-col lg:flex-row items-center lg:items-start gap-1 sm:gap-3 flex-1">
+                        <span class="text-xl sm:text-3xl shrink-0">🛡️</span>
                         <div>
-                            <div class="font-bold text-sm">Gwarancja 5 lat</div>
-                            <div class="text-white/70 text-xs">na powłoki</div>
+                            <div class="font-bold text-[9px] sm:text-sm leading-tight lg:whitespace-nowrap">Profesjonalne systemy</div>
+                            <div class="text-white/70 text-[8px] sm:text-xs mt-0.5 lg:whitespace-nowrap">Sikkens, Tikkurila</div>
                         </div>
                     </div>
-                    <div class="flex items-center lg:items-start gap-3">
-                        <span class="text-3xl shrink-0">🍃</span>
+                    <div class="flex flex-col lg:flex-row items-center lg:items-start gap-1 sm:gap-3 flex-1">
+                        <span class="text-xl sm:text-3xl shrink-0">🍃</span>
                         <div>
-                            <div class="font-bold text-sm">Eco-friendly</div>
-                            <div class="text-white/70 text-xs">Odnawiamy drewno</div>
+                            <div class="font-bold text-[9px] sm:text-sm leading-tight lg:whitespace-nowrap">Eco-friendly</div>
+                            <div class="text-white/70 text-[8px] sm:text-xs mt-0.5 lg:whitespace-nowrap">Odnawiamy drewno</div>
                         </div>
                     </div>
-                    <div class="flex items-center lg:items-start gap-3">
-                        <span class="text-3xl shrink-0">⏱️</span>
+                    <div class="flex flex-col lg:flex-row items-center lg:items-start gap-1 sm:gap-3 flex-1">
+                        <span class="text-xl sm:text-3xl shrink-0">⏱️</span>
                         <div>
-                            <div class="font-bold text-sm">1-2 dni</div>
-                            <div class="text-white/70 text-xs">bez kucia ścian</div>
+                            <div class="font-bold text-[9px] sm:text-sm leading-tight lg:whitespace-nowrap">1-2 dni</div>
+                            <div class="text-white/70 text-[8px] sm:text-xs mt-0.5 lg:whitespace-nowrap">Bez kucia ścian</div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="flex flex-col items-center lg:items-end gap-8">
-                <div class="bg-white/10 backdrop-blur-xl rounded-[40px] p-8 md:p-10 border border-white/20 shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500 w-full max-w-[320px] text-center">
-                    <div class="text-7xl md:text-8xl font-black text-[#22c55e] leading-none italic">70%</div>
-                    <div class="text-sm md:text-xl font-bold uppercase tracking-widest mt-2">taniej niż wymiana</div>
+            <!-- ПРАВАЯ ЧАСТЬ -->
+            <div class="flex flex-row lg:flex-col items-center justify-center lg:items-end gap-4 sm:gap-8 mt-2 sm:mt-0">
+                <!-- ПЛАШКА 70% (со смайликом 😲) -->
+                <div class="bg-white/10 backdrop-blur-xl rounded-2xl md:rounded-[40px] p-4 md:p-10 border border-white/20 shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500 max-w-[160px] md:max-w-none text-center shrink-0">
+                    <div class="text-4xl md:text-8xl font-black text-[#22c55e] leading-none italic flex justify-center items-center gap-1 md:gap-3">
+                        <span class="text-3xl md:text-6xl not-italic">😲</span>70%
+                    </div>
+                    <div class="text-[9px] md:text-xl font-bold uppercase tracking-wider mt-1 md:mt-2 md:whitespace-nowrap">taniej niż wymiana</div>
                 </div>
                 
-                <div class="text-white/80 text-lg md:text-xl max-w-[350px] italic text-center lg:text-right relative">
-                    <span class="absolute -top-4 -left-4 lg:left-auto lg:-right-4 text-white/20 text-4xl">❝</span>
+                <!-- ОТЗЫВ -->
+                <div class="text-white/80 text-[10px] md:text-xl max-w-[160px] md:max-w-[350px] italic text-left lg:text-right relative leading-tight">
+                    <span class="hidden md:block absolute -top-4 -left-4 lg:left-auto lg:-right-4 text-white/20 text-4xl">❝</span>
                     „Okna wyglądają jak nowe, a rachunki za ogrzewanie spadły o 28%”
-                    <span class="absolute -bottom-4 -right-4 lg:right-auto lg:-left-4 text-white/20 text-4xl">❞</span>
-                    <span class="text-sm mt-4 block not-italic font-bold text-[#22c55e]">
-                        — Anna Kowalska, Wilanów
+                    <span class="hidden md:block absolute -bottom-4 -right-4 lg:right-auto lg:-left-4 text-white/20 text-4xl">❞</span>
+                    <span class="text-[9px] md:text-sm mt-1 md:mt-4 block not-italic font-bold text-[#22c55e]">
+                        — Anna Kowalska
                     </span>
                 </div>
             </div>
@@ -173,51 +205,53 @@
     </section>
 
     <!-- BEFORE / AFTER -->
-    <section id="before-after" class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="text-center mb-12">
-                <span class="px-4 py-2 bg-[#22c55e]/10 text-[#22c55e] text-sm font-semibold rounded-3xl">NAJLEPSZY DOWÓD</span>
-                <h2 class="text-4xl font-bold heading-font mt-4 text-[#4a2c0b]">Zobacz co potrafimy zrobić z Twoimi oknami</h2>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-8 lg:gap-12 items-stretch">
-                
-                <div class="flex flex-col rounded-3xl overflow-hidden shadow-2xl bg-white transition-all hover:shadow-3xl">
-                    <div class="bg-[#4a2c0b] text-white text-center py-3 text-sm font-bold tracking-wider uppercase">
-                        PRZED renowacją
-                    </div>
-                    <div class="w-full bg-gray-200">
-                        <img src="okno1.jpg" alt="Okno przed renowacją" class="w-full h-auto block">
-                    </div>
-                    <div class="p-6 md:p-8 flex-1 flex items-center justify-center bg-white border-t border-gray-100">
-                        <p class="text-red-600 font-bold text-lg leading-relaxed flex items-start gap-3">
-                            <span class="text-2xl shrink-0">❌</span>
-                            <span>Pękająca farba • Łuszczący się lakier • Szary nalot • Wilgoć w drewnie</span>
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="flex flex-col rounded-3xl overflow-hidden shadow-2xl bg-white transition-all hover:shadow-3xl">
-                    <div class="bg-[#22c55e] text-white text-center py-3 text-sm font-bold tracking-wider uppercase">
-                        PO renowacji
-                    </div>
-                    <div class="w-full bg-gray-200">
-                        <img src="okno2.jpg" alt="Okno po renowacji" class="w-full h-auto block">
-                    </div>
-                    <div class="p-6 md:p-8 flex-1 flex items-center justify-center bg-white border-t border-gray-100">
-                        <p class="text-[#22c55e] font-bold text-lg leading-relaxed flex items-start gap-3">
-                            <span class="text-2xl shrink-0">✅</span>
-                            <span>Wygląda jak fabrycznie nowe • Chronione na kolejne 15–20 lat</span>
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-            
-            <p class="text-center text-gray-400 mt-10 text-sm font-medium">
-                * Zdjęcia realizacji na Mokotowie
-            </p>
+    <section id="before-after" class="py-12 sm:py-16 lg:py-20 bg-gray-50">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-10 sm:mb-14 lg:mb-16">
+            <span class="px-4 py-2 bg-[#22c55e]/10 text-[#22c55e] text-xs sm:text-sm font-semibold rounded-3xl tracking-wide">NAJLEPSZY DOWÓD</span>
+            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold heading-font mt-5 sm:mt-6 text-[#4a2c0b] leading-tight">Zobacz co potrafimy zrobić z Twoimi oknami</h2>
         </div>
+        
+        <div class="grid lg:grid-cols-2 gap-6 sm:gap-10 lg:gap-16 items-stretch">
+            
+            <!-- PRZED -->
+            <div class="flex flex-col rounded-[2rem] overflow-hidden shadow-2xl bg-white transition-all duration-300 hover:shadow-3xl hover:-translate-y-1">
+                <div class="bg-[#4a2c0b] text-white text-center py-3 sm:py-4 text-xs sm:text-sm font-bold tracking-[0.15em] uppercase">
+                    PRZED renowacją
+                </div>
+                <div class="w-full bg-gray-200 relative aspect-video sm:aspect-auto">
+                    <img src="okno1.jpg" alt="Okno przed renowacją" class="w-full h-full object-cover block">
+                </div>
+                <div class="p-6 sm:p-8 lg:p-10 flex-1 flex items-center justify-center bg-white border-t border-gray-100">
+                    <p class="text-red-600 font-bold text-base sm:text-lg lg:text-xl leading-relaxed sm:leading-loose flex items-start gap-3 sm:gap-4">
+                        <span class="text-xl sm:text-2xl shrink-0 mt-0.5">❌</span>
+                        <span class="text-pretty">Pękająca farba • Łuszczący się lakier • Szary nalot • Wilgoć w drewnie</span>
+                    </p>
+                </div>
+            </div>
+            
+            <!-- PO -->
+            <div class="flex flex-col rounded-[2rem] overflow-hidden shadow-2xl bg-white transition-all duration-300 hover:shadow-3xl hover:-translate-y-1">
+                <div class="bg-[#22c55e] text-white text-center py-3 sm:py-4 text-xs sm:text-sm font-bold tracking-[0.15em] uppercase">
+                    PO renowacji
+                </div>
+                <div class="w-full bg-gray-200 relative aspect-video sm:aspect-auto">
+                    <img src="okno2.jpg" alt="Okno po renowacji" class="w-full h-full object-cover block">
+                </div>
+                <div class="p-6 sm:p-8 lg:p-10 flex-1 flex items-center justify-center bg-white border-t border-gray-100">
+                    <p class="text-[#22c55e] font-bold text-base sm:text-lg lg:text-xl leading-relaxed sm:leading-loose flex items-start gap-3 sm:gap-4">
+                        <span class="text-xl sm:text-2xl shrink-0 mt-0.5">✅</span>
+                        <span class="text-pretty">Wygląda jak fabrycznie nowe • Chronione na kolejne 15–20 lat</span>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        
+        <p class="text-center text-gray-400 mt-8 sm:mt-12 text-xs sm:text-sm font-medium">
+            * Zdjęcia realizacji na Mokotowie
+        </p>
+    </div>
     </section>
 
     <!-- PROBLEM SECTION -->
@@ -430,58 +464,57 @@
                 </div>
             </div>
             
-            <!-- Добавили grid-cols-2 для мобилок и уменьшили gap для маленьких экранов -->
             <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-8">
                 
                 <div class="bg-white border border-gray-100 rounded-2xl sm:rounded-3xl p-4 sm:p-8 shadow-sm hover:shadow-xl transition-all group">
                     <div class="w-10 h-10 sm:w-12 sm:h-12 bg-[#4a2c0b] text-white rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-2xl font-bold mb-4 sm:mb-6 group-hover:rotate-6 transition-transform">1</div>
-                    <h4 class="font-bold text-base sm:text-xl text-[#4a2c0b] flex flex-col xl:flex-row items-start xl:items-center gap-1 sm:gap-2">
-                        <span>🔍</span> Diagnostyka
+                    <!-- Изменили выравнивание здесь -->
+                    <h4 class="font-bold text-sm sm:text-xl text-[#4a2c0b] flex items-center gap-1.5 sm:gap-2">
+                        <span class="shrink-0">🔍</span> Diagnostyka
                     </h4>
                     <p class="mt-2 sm:mt-3 text-gray-600 leading-relaxed text-xs sm:text-sm">Dokładna ocena stanu drewna i okuć + zabezpieczenie otoczenia</p>
                 </div>
 
                 <div class="bg-white border border-gray-100 rounded-2xl sm:rounded-3xl p-4 sm:p-8 shadow-sm hover:shadow-xl transition-all group">
                     <div class="w-10 h-10 sm:w-12 sm:h-12 bg-[#4a2c0b] text-white rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-2xl font-bold mb-4 sm:mb-6 group-hover:rotate-6 transition-transform">2</div>
-                    <h4 class="font-bold text-base sm:text-xl text-[#4a2c0b] flex flex-col xl:flex-row items-start xl:items-center gap-1 sm:gap-2">
-                        <span>👷</span> Demontaż
+                    <h4 class="font-bold text-sm sm:text-xl text-[#4a2c0b] flex items-center gap-1.5 sm:gap-2">
+                        <span class="shrink-0">👷</span> Demontaż
                     </h4>
                     <p class="mt-2 sm:mt-3 text-gray-600 leading-relaxed text-xs sm:text-sm">Zdejmujemy skrzydła i docieramy do każdego zakamarka</p>
                 </div>
 
                 <div class="bg-white border border-gray-100 rounded-2xl sm:rounded-3xl p-4 sm:p-8 shadow-sm hover:shadow-xl transition-all group">
                     <div class="w-10 h-10 sm:w-12 sm:h-12 bg-[#4a2c0b] text-white rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-2xl font-bold mb-4 sm:mb-6 group-hover:rotate-6 transition-transform">3</div>
-                    <h4 class="font-bold text-base sm:text-xl text-[#4a2c0b] flex flex-col xl:flex-row items-start xl:items-center gap-1 sm:gap-2">
-                        <span>🪟</span> Oczyszczanie
+                    <h4 class="font-bold text-sm sm:text-xl text-[#4a2c0b] flex items-center gap-1.5 sm:gap-2">
+                        <span class="shrink-0">🪟</span> Oczyszczanie
                     </h4>
                     <p class="mt-2 sm:mt-3 text-gray-600 leading-relaxed text-xs sm:text-sm">Mechanicznie i chemicznie usuwamy stare powłoki do surowego drewna</p>
                 </div>
 
                 <div class="bg-white border border-gray-100 rounded-2xl sm:rounded-3xl p-4 sm:p-8 shadow-sm hover:shadow-xl transition-all group">
                     <div class="w-10 h-10 sm:w-12 sm:h-12 bg-[#4a2c0b] text-white rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-2xl font-bold mb-4 sm:mb-6 group-hover:rotate-6 transition-transform">4</div>
-                    <h4 class="font-bold text-base sm:text-xl text-[#4a2c0b] flex flex-col xl:flex-row items-start xl:items-center gap-1 sm:gap-2">
-                        <span>⚒️</span> Szlifowanie
+                    <h4 class="font-bold text-sm sm:text-xl text-[#4a2c0b] flex items-center gap-1.5 sm:gap-2">
+                        <span class="shrink-0">⚒️</span> Szlifowanie
                     </h4>
                     <p class="mt-2 sm:mt-3 text-gray-600 leading-relaxed text-xs sm:text-sm">Precyzyjne wygładzanie + wypełnianie ubytków masami specjalistycznymi</p>
                 </div>
 
                 <div class="bg-white border border-gray-100 rounded-2xl sm:rounded-3xl p-4 sm:p-8 shadow-sm hover:shadow-xl transition-all group">
                     <div class="w-10 h-10 sm:w-12 sm:h-12 bg-[#4a2c0b] text-white rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-2xl font-bold mb-4 sm:mb-6 group-hover:rotate-6 transition-transform">5</div>
-                    <h4 class="font-bold text-base sm:text-xl text-[#4a2c0b] flex flex-col xl:flex-row items-start xl:items-center gap-1 sm:gap-2">
-                        <span>🖌️</span> Malowanie
+                    <h4 class="font-bold text-sm sm:text-xl text-[#4a2c0b] flex items-center gap-1.5 sm:gap-2">
+                        <span class="shrink-0">🖌️</span> Malowanie
                     </h4>
                     <p class="mt-2 sm:mt-3 text-gray-600 leading-relaxed text-xs sm:text-sm">Odtłuszczanie + impregnat + minimum 2 warstwy farby / lakierobejcy</p>
                 </div>
 
                 <div class="bg-white border border-gray-100 rounded-2xl sm:rounded-3xl p-4 sm:p-8 shadow-sm hover:shadow-xl transition-all group">
                     <div class="w-10 h-10 sm:w-12 sm:h-12 bg-[#4a2c0b] text-white rounded-xl sm:rounded-2xl flex items-center justify-center text-lg sm:text-2xl font-bold mb-4 sm:mb-6 group-hover:rotate-6 transition-transform">6</div>
-                    <h4 class="font-bold text-base sm:text-xl text-[#4a2c0b] flex flex-col xl:flex-row items-start xl:items-center gap-1 sm:gap-2">
-                        <span>🔧</span> Regulacja
+                    <h4 class="font-bold text-sm sm:text-xl text-[#4a2c0b] flex items-center gap-1.5 sm:gap-2">
+                        <span class="shrink-0">🔧</span> Regulacja
                     </h4>
                     <p class="mt-2 sm:mt-3 text-gray-600 leading-relaxed text-xs sm:text-sm">Czyszczenie, smarowanie i precyzyjna regulacja docisku okuć</p>
                 </div>
 
-                <!-- Карточка с видео занимает 2 колонки на всех экранах -->
                 <div class="bg-white border-2 border-dashed border-[#22c55e] rounded-2xl sm:rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-xl transition-all group col-span-2 flex items-center justify-center text-center">
                     <div>
                         <i class="fa-solid fa-video text-4xl sm:text-5xl text-[#22c55e] mb-3 sm:mb-4"></i>
