@@ -97,79 +97,83 @@
         </div>
     </nav>
 
-    <section class="hero-bg relative w-full min-h-screen flex items-center justify-center text-white pt-20 pb-10 md:pt-24 md:pb-12 overflow-hidden">
-        <div class="absolute inset-0 bg-black/30 z-0"></div>
+    <section class="hero-bg relative w-full h-[100dvh] flex flex-col text-white pt-16 md:pt-20 overflow-hidden">
+        <div class="absolute inset-0 bg-black/35 z-0"></div>
 
-        <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-20 items-center w-full relative z-10">
+        <div class="relative z-10 max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full flex-1 flex flex-col justify-around py-4 md:py-10">
             
-            <div class="space-y-6 md:space-y-10 text-center lg:text-left">
+            <div class="grid lg:grid-cols-2 gap-6 lg:gap-20 items-center">
                 
-                <h1 class="text-3xl sm:text-5xl lg:text-7xl font-bold leading-[1.1] heading-font tracking-tight">
-                    Twoje okna mają <br class="hidden lg:block"> 15-20 lat? 
-                    <span class="text-[#22c55e] block mt-2 sm:mt-4">
-                        Czas je odnowić!
-                    </span>
-                </h1>
-
-                <div class="max-w-xl mx-auto lg:mx-0 space-y-4">
-                    <p class="text-base sm:text-xl lg:text-2xl text-white/95 leading-relaxed">
-                        Profesjonalna renowacja okien drewnianych. 
-                        <span class="font-bold">Zaoszczędź do 70% kosztów</span> bez konieczności wymiany.
-                    </p>
-                    <p class="text-sm sm:text-lg text-white/80 italic flex items-center justify-center lg:justify-start gap-2">
-                        🎨 <span class="not-italic font-medium text-white">Możliwość zmiany koloru od wewnątrz.</span>
-                    </p>
-                </div>
-
-                <div class="flex flex-row justify-center lg:justify-start gap-3 sm:gap-6 pt-2">
-                    <button onclick="document.getElementById('cta-form').scrollIntoView({ behavior: 'smooth' })" 
-                            class="flex-1 sm:flex-none bg-[#22c55e] hover:bg-[#16a34a] text-white text-[11px] sm:text-lg font-bold px-2 py-4 sm:px-10 sm:py-5 rounded-2xl shadow-xl shadow-[#22c55e]/30 transition-all active:scale-95 leading-tight text-center">
-                        Bezpłatna wycena ✅
-                    </button>
+                <div class="flex flex-col justify-center space-y-4 md:space-y-10 text-center lg:text-left">
                     
-                    <a href="#kolorystyka-wnetrza" 
-                       class="flex-1 sm:flex-none bg-white/10 hover:bg-white/20 border border-white/30 backdrop-blur-md text-white text-[11px] sm:text-lg font-semibold px-2 py-4 sm:px-10 sm:py-5 rounded-2xl transition-all leading-tight text-center">
-                        Zmień kolor 🖼️
-                    </a>
+                    <h1 class="text-3xl sm:text-5xl lg:text-7xl font-bold leading-[1.1] heading-font tracking-tight">
+                        Twoje okna mają <br class="hidden lg:block"> 15-20 lat? 
+                        <span class="text-[#22c55e] block mt-1 sm:mt-4">
+                            Czas je odnowić!
+                        </span>
+                    </h1>
+
+                    <div class="max-w-xl mx-auto lg:mx-0 space-y-3 md:space-y-4">
+                        <p class="text-sm sm:text-xl lg:text-2xl text-white/95 leading-relaxed">
+                            Profesjonalna renowacja okien drewnianych. 
+                            <span class="font-bold">Zaoszczędź do 70% kosztów</span> bez konieczności wymiany.
+                        </p>
+                        <p class="text-xs sm:text-lg text-white/80 italic flex items-center justify-center lg:justify-start gap-2">
+                            🎨 <span class="not-italic font-medium text-white">Możliwość zmiany koloru od wewnątrz.</span>
+                        </p>
+                    </div>
+
+                    <div class="flex flex-row justify-center lg:justify-start gap-2 sm:gap-6">
+                        <button onclick="document.getElementById('cta-form').scrollIntoView({ behavior: 'smooth' })" 
+                                class="flex-1 sm:flex-none bg-[#22c55e] hover:bg-[#16a34a] text-white text-[10px] sm:text-lg font-bold px-2 py-4 sm:px-10 sm:py-5 rounded-2xl shadow-xl shadow-[#22c55e]/30 transition-all active:scale-95 leading-tight text-center">
+                            Bezpłatna wycena ✅
+                        </button>
+                        
+                        <a href="#kolorystyka-wnetrza" 
+                           class="flex-1 sm:flex-none bg-white/10 hover:bg-white/20 border border-white/30 backdrop-blur-md text-white text-[10px] sm:text-lg font-semibold px-2 py-4 sm:px-10 sm:py-5 rounded-2xl transition-all leading-tight text-center">
+                            Zmień kolor 🖼️
+                        </a>
+                    </div>
                 </div>
 
-                <div class="flex flex-row justify-between gap-2 pt-8 sm:pt-12 border-t border-white/10 text-center lg:text-left">
-                    <div class="flex flex-col lg:grid lg:grid-cols-[auto_1fr] items-center lg:items-start gap-1 sm:gap-3 flex-1">
-                        <span class="text-xl sm:text-3xl shrink-0">🛡️</span>
-                        <div class="min-w-0">
-                            <div class="font-bold text-[10px] sm:text-sm leading-tight text-white">Profesjonalne powłoki</div>
-                            <div class="text-white/70 text-[9px] sm:text-xs mt-0.5">Sikkens, Tikkurila</div>
-                        </div>
+                <div class="hidden lg:flex flex-col items-end gap-8">
+                    <div class="bg-white/10 backdrop-blur-2xl rounded-[3rem] p-10 border border-white/20 shadow-2xl -rotate-2">
+                        <div class="text-7xl font-black text-[#22c55e] leading-none italic">70%</div>
+                        <div class="text-lg font-bold uppercase tracking-[0.2em] mt-3 opacity-90 text-center text-white">taniej niż wymiana</div>
                     </div>
-                    <div class="flex flex-col lg:grid lg:grid-cols-[auto_1fr] items-center lg:items-start gap-1 sm:gap-3 flex-1">
-                        <span class="text-xl sm:text-3xl shrink-0">🍃</span>
-                        <div class="min-w-0">
-                            <div class="font-bold text-[10px] sm:text-sm leading-tight text-white">Eco-friendly</div>
-                            <div class="text-white/70 text-[9px] sm:text-xs mt-0.5">Odnawiamy drewno</div>
-                        </div>
-                    </div>
-                    <div class="flex flex-col lg:grid lg:grid-cols-[auto_1fr] items-center lg:items-start gap-1 sm:gap-3 flex-1">
-                        <span class="text-xl sm:text-3xl shrink-0">⏱️</span>
-                        <div class="min-w-0">
-                            <div class="font-bold text-[10px] sm:text-sm leading-tight text-white">1-2 dni</div>
-                            <div class="text-white/70 text-[9px] sm:text-xs mt-0.5">Bez kucia ścian</div>
-                        </div>
+                    <div class="bg-black/20 backdrop-blur-md border-l-4 border-[#22c55e] p-6 max-w-[320px]">
+                        <p class="text-white/90 text-lg italic leading-relaxed text-left">
+                            „Okna wyglądają jak nowe, a rachunki spadły o 30%”
+                        </p>
+                        <p class="text-[#22c55e] font-bold text-sm mt-3 uppercase tracking-widest text-left">— Anna Wójcik</p>
                     </div>
                 </div>
             </div>
 
-            <div class="hidden lg:flex flex-col items-end gap-10">
-                <div class="bg-white/10 backdrop-blur-2xl rounded-[3rem] p-10 border border-white/20 shadow-2xl -rotate-2">
-                    <div class="text-7xl font-black text-[#22c55e] leading-none italic">70%</div>
-                    <div class="text-lg font-bold uppercase tracking-[0.2em] mt-3 opacity-90 text-center text-white">taniej niż wymiana</div>
+            <div class="flex flex-row justify-between gap-2 pt-4 border-t border-white/10 text-center lg:text-left">
+                <div class="flex flex-col lg:grid lg:grid-cols-[auto_1fr] items-center lg:items-start gap-1 sm:gap-3 flex-1">
+                    <span class="text-lg sm:text-3xl shrink-0">🛡️</span>
+                    <div class="min-w-0">
+                        <div class="font-bold text-[9px] sm:text-sm leading-tight text-white">Profesjonalne powłoki</div>
+                        <div class="text-white/70 text-[8px] sm:text-xs">Sikkens, Tikkurila</div>
+                    </div>
                 </div>
-                <div class="bg-black/20 backdrop-blur-md border-l-4 border-[#22c55e] p-6 max-w-[320px]">
-                    <p class="text-white/90 text-lg italic leading-relaxed text-left">
-                        „Okna wyglądają jak nowe, a rachunki spadły o 30%”
-                    </p>
-                    <p class="text-[#22c55e] font-bold text-sm mt-3 uppercase tracking-widest text-left">— Anna Wójcik</p>
+                <div class="flex flex-col lg:grid lg:grid-cols-[auto_1fr] items-center lg:items-start gap-1 sm:gap-3 flex-1">
+                    <span class="text-lg sm:text-3xl shrink-0">🍃</span>
+                    <div class="min-w-0">
+                        <div class="font-bold text-[9px] sm:text-sm leading-tight text-white">Eco-friendly</div>
+                        <div class="text-white/70 text-[8px] sm:text-xs">Odnawiamy drewno</div>
+                    </div>
+                </div>
+                <div class="flex flex-col lg:grid lg:grid-cols-[auto_1fr] items-center lg:items-start gap-1 sm:gap-3 flex-1">
+                    <span class="text-lg sm:text-3xl shrink-0">⏱️</span>
+                    <div class="min-w-0">
+                        <div class="font-bold text-[9px] sm:text-sm leading-tight text-white">1-2 dni</div>
+                        <div class="text-white/70 text-[8px] sm:text-xs">Bez kucia ścian</div>
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
 
